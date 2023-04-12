@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toua's About Me Page</title>
+</head>
+<div class="firstDiv">
+    <h1>Toua's Page</h1>
+
+    <button id="aboutMe", class = "joeyWheeler">Click Me</button>
+    <p class="konoDioda"></p>
+    <img class="photoMe" width="20%">
+    <img class="mudaDio" width="35%">
+    
+</div>
+
+<div class = "secondDiv">
+    <ul>
+        <li><h1><a target="blank" href="./Food/food.html">Food</a></h1></li>
+        <li><h1><a target="blank" href="./Hobbies/hobbies.html">Hobbies</a></h1></li>
+    </ul>
+</div>
+<body>
+
+</body>
+<script>
+    // About Me
+    const aboutMe = document.getElementById("aboutMe"); 
+    const konoDioda = document.querySelector(".konoDioda");
+    console.log(konoDioda.innerText);
+
+    aboutMe.addEventListener('click',zaWarudo) 
+    
+    function zaWarudo() { 
+        const stringVariable = "Hello everyone,";
+        const stringNameVariable = "Toua";
+        const num = 22;
+        const exploreMore = "more about my hobbies and favorite food, "
+        const extraStuff = "I am the fourth child of the family and I'm the tallest in the family. "
+        const imageSource = "./photos/Orientation_Photo.PNG"; 
+        const daddyDio = "./photos/muda-muda-muda-muda.gif";
+                
+        if(konoDioda.innerText) {
+            console.log("The paragraph already has text");
+        }else {
+            console.log(false);
+            konoDioda.innerText = `${stringVariable} my name is ${stringNameVariable} and I am ${num}. ${extraStuff} I am Hmong and I speak broken Hmong so not really proud of it but it works. I have a minor temper problem but it's rare for it to comeby. Assuming they don't push me in a certain way. To know ${exploreMore} click on food and hobby.`;
+        }
+
+        const photoMe = document.querySelector(".photoMe");
+        photoMe.src = imageSource;
+
+        const mudaDio = document.querySelector(".mudaDio");
+        mudaDio.src="./photos/IMG-0277.jpg";
+
+
+    }
+</script> 
+</body>
+</html>

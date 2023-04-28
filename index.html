@@ -1,10 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="index.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>New About Me Page</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <p>Hi, my name is Toua Vue.</p>
+      <img src="./Photo_Assets/IMG-0974.JPG" />
+    </header>
+    <h1>About Me</h1>
+    <p>I am an intern at I.C Stars.</p>
+    <center>
+      <a href="https://www.linkedin.com/in/toua-vue-675b7a263/" target="_blank">
+        Toua's LinkedIn
+      </a>
+    </center>
+    <break></break>
+    <center>
+      <a href="https://github.com/touavue2" target="_blank"> Toua's github </a>
+    </center>
+    <center><button id="aboutMe" , class="button2">About Me</button></center>
+    <p class="konoDioda"></p>
+
+    <script>
+      const aboutMe = document.getElementById("aboutMe");
+
+      aboutMe.addEventListener("click", zawarudo);
+
+      function zawarudo() {
+        //text about myself and using too much jojo's reference :)
+        const konoDioda = document.querySelector(".konoDioda");
+        konoDioda.innerHTML =
+          "This is me when I was 17 years old. A lot of my photos don't have me smiling.";
+      }
+    </script>
+    <main></main>
+
+    <footer>&copy; 2023 touavue2. All Rights Reserved</footer>
+  </body>
 </html>
